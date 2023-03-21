@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 0px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    height: 70px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    font-size: 20px;
+    
+}
+.styled-table thead tr th{
+    border-right: 1px solid #dddddd;
+
+}
+.styled-table thead tr th:last-child{
+    display: none;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+td{
+    text-align: center;
+    position:relative
+}
+.styled-table tbody tr th{
+    background-color: #009879;
+    border-right: 1px solid #dddddd;
+    font-size: 20px;
+    color: white;
+
+}
+.styled-table tbody tr td{
+    border-right: 1px solid #dddddd;
+
+}
+.styled-table tbody tr td:last-of-type{
+   display: none;
+
+}
+
+
+.styled-table tbody tr td h2{
+    color:rgba(0, 0, 0, 0.707);
+    margin-bottom: 5px;
+}
+.styled-table tbody tr td p{
+   color:cadetblue
+    
+}
+.formcont{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    /* height: 400px; */
+    background-color: rgba(0, 0, 0, 0.477);
+    background-color:goldenrod;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 20px;
+}
+.control{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+.formcont1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    /* height: 400px; */
+    background-color: rgba(0, 0, 0, 0.477);
+    background-color:goldenrod;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 20px;
+}
+.control1{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+input{
+    width: 80%;
+    padding: 5px 5px;
+    outline: none;
+    border: none;
+}
+label{
+    color: black;
+    font-weight: bold;
+}
+
+select{
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+}
+.submitbtn{
+    width: 80%;
+    background-color: rgb(87, 87, 124);
+    /* height: 70px; */
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.submitbtn1{
+    width: 80%;
+    background-color: rgb(87, 87, 124);
+    /* height: 70px; */
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.update{
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #00987ac3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+}
+.update:hover{
+    background-color: #009879;
+}
+.deleteit{
+    right:30px
+}
+h3{
+    color:rgb(151, 40, 40);
+    font-weight: 800;
+    
+}
+.out{
+    background-color: rgba(128, 128, 128, 0.563);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.inn{
+    background-color: rgba(128, 128, 128, 0.563);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.cross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color:rgba(0, 0, 0, 0.76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cross:hover , .cross1:hover{
+    background-color: black;
+}
+.cross1{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color:rgba(0, 0, 0, 0.76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.addtask{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #00987ac3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addtask:hover{
+    background-color: #009879;
+}
